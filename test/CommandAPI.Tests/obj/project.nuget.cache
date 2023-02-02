@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "ig+PVVw052Kpknm/HYTwBVmjHO4WDE0H/W0v4bfbmyMYOOzpPqayL/cRXB6oZh41l9H4w/AcCc01Lm8+dSGixw==",
+  "success": false,
+  "projectFilePath": "/Users/joshuafordyce/CommandAPISolution/test/CommandAPI.Tests/CommandAPI.Tests.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "Microsoft.NET.Test.Sdk"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "xunit"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "xunit.runner.visualstudio"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "libraryId": "coverlet.collector"
+    }
+  ]
+}
