@@ -14,6 +14,7 @@
         "outputPath": "/Users/joshuafordyce/CommandAPISolution/src/CommandAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/Users/joshuafordyce/CommandAPISolution/NuGet.Config",
           "/Users/joshuafordyce/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -70,6 +71,7 @@
         "outputPath": "/Users/joshuafordyce/CommandAPISolution/test/CommandAPI.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "/Users/joshuafordyce/CommandAPISolution/NuGet.Config",
           "/Users/joshuafordyce/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
