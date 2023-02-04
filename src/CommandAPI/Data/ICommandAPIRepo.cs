@@ -12,8 +12,8 @@ namespace CommandAPI.Data
         //We specify that our Repo should provide a save chaneges method
         bool SaveChanges();
 
-        IEnumberable<Command> GetAllCommands();
-        Command GetCommandById( int id);
+        IEnumerable<Command> GetAllCommands();
+        Command GetCommandById(int id);
         void CreateCommand(Command cmd);
         void UpdateCommand(Command cmd);
         void DeleteCommand(Command cmd);

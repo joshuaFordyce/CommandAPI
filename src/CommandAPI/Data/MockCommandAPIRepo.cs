@@ -12,7 +12,7 @@ namespace CommandAPI.Data
 
         public void DeleteCommand(Command cmd)
         {
-            throw new System.NotImplmentedException();
+            throw new System.NotImplementedException();
         }
 
         public IEnumerable<Command> GetAllCommands()
@@ -20,13 +20,19 @@ namespace CommandAPI.Data
             var commands = new List<Command>
             {
                 new Command{
-                    Id=0, HowTo="How to generate a migration",CommandLine="dotnet ef migrations add <Name of Migration",Platform=".Net Core EF"
+                    Id=0,
+                     HowTo="How to generate a migration",
+                     CommandLine="dotnet ef migrations add <Name of Migration",
+                     Platform=".Net Core EF"
                 },
                 new Command{
-                    Id=1, HowTO="Run Migrations",CommandLine="dotnet ef database update",Platform=".Net CoreEf"
+                    Id=1, HowTo="Run Migrations",CommandLine="dotnet ef database update",Platform=".Net Core Ef"
                 },
                 new Command{
-                    Id=2, HowTo="List active migrations", CommandLine="dotnet ef migrations list", Platform=".Net Core EF"
+                    Id=2,
+                     HowTo="List active migrations",
+                      CommandLine="dotnet ef migrations list",
+                       Platform=".Net Core EF"
                 }
             };
             return commands;
@@ -39,12 +45,14 @@ namespace CommandAPI.Data
 
         public void UpdateCommand(Command cmd)
         {
-            throw new System.NotImplementedExcepetion();
+            throw new System.NotImplementedException();
         }
 
         public Command GetCommandById(int id){
             return new Command{
-                Id=0, HowTo="How to generate a migration", CommandLine="dotnet ef migrations add <Name of Migration>",Platform=".Net Core Ef"
+                Id=0, HowTo="How to generate a migration",
+                 CommandLine="dotnet ef migrations add <Name of Migration>",
+                 Platform=".Net Core Ef"
             };
         }
     }
