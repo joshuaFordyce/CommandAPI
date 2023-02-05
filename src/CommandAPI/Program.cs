@@ -22,5 +22,7 @@ namespace CommandAPI
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+        
+
     }
 }
