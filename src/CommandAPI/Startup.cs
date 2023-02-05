@@ -3,14 +3,24 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CommandAPI.Data;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace CommandAPI
 {
     public class Startup
     {
+        public IConfiguration Configuration {get;}
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             //SECTION 1. Add code below
+
+            services.AddDbContext<CommandDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PostgreSqlConnection")));
             services.AddControllers();
 
             services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();
