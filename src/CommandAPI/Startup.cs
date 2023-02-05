@@ -20,7 +20,7 @@ namespace CommandAPI
         {
             //SECTION 1. Add code below
 
-            services.AddDbContext<CommandDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PostgreSqlConnection")));
+            services.AddDbContext<CommandContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PostgreSqlConnection")));
             services.AddControllers();
 
             services.AddScoped<ICommandAPIRepo, MockCommandAPIRepo>();

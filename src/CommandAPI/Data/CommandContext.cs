@@ -3,9 +3,9 @@ using CommandAPI.Models;
 
 namespace CommandAPI.Data
 {
-    public class CommandDbContext : DbContext
+    public class CommandContext : DbContext
     {
-        public CommandDbContext(DbContextOptions<CommandDbContext> options) : base(options)
+        public CommandContext(DbContextOptions<CommandContext> options) : base(options)
         {
         }
 
